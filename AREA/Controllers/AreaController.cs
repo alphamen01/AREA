@@ -55,7 +55,7 @@ namespace AREA.Controllers
 
             if (result)
             {
-                return Ok("Area Actualizada.");
+                return Ok();
             }
             else
             {
@@ -69,7 +69,7 @@ namespace AREA.Controllers
             var result = await areaProvider.AddAsync(area);
             if (result)
             {
-                return Ok("Area registrada.");
+                return Ok(result);
             }
             return BadRequest("No se pudo registrar el área.");
         }

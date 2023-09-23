@@ -26,8 +26,7 @@ namespace AREA.Providers
             
                 context.Areas.Add(area);
                 var result = await context.SaveChangesAsync();
-                return result == 1;
-            
+                return result == 1;            
             
         }
 
