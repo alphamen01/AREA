@@ -55,7 +55,7 @@ namespace AREA.Controllers
 
             if (result)
             {
-                return Ok();
+                return Ok(result);
             }
             else
             {
